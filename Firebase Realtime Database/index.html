@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <input id="email" type="text" />
+    <input id="username" type="text" />
+    <button type="button" onclick="writeUserData()">Move To data base</button>
+
+<hr />
+    <input id="toGetname" type="text" />
+    <button type="button" onclick="getData()">Get back from data</button>
+    <ul id="Users">
+
+    </ul>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCSYXjWyoAM8OnkcLO-D7HTj516NJyuANA",
+    authDomain: "random-148dd.firebaseapp.com",
+    databaseURL: "https://random-148dd.firebaseio.com",
+    projectId: "random-148dd",
+    storageBucket: "random-148dd.appspot.com",
+    messagingSenderId: "461124119963",
+    appId: "1:461124119963:web:166df4cd672134ef"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+</body>
+</html>
